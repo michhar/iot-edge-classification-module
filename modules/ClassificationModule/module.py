@@ -51,9 +51,11 @@ def transform_image(array):
     image = loader(pil_image).float()
     return image.to(device)
 
+# Keep count of classifcations performed
+classification_index = 0
+
 while True:
-    # Keep count of classifcations performed
-    classification_index = 0
+    
     capture = video_capture.read()
     if capture[0]:
         array = capture[1]

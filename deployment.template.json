@@ -57,7 +57,7 @@
             "status": "running",
             "restartPolicy": "always",
             "settings": {
-                "image": "iot-edge-torchvision-module:latest",
+                "image": "rheartpython/iot-edge-torchvision-module:latest",
                 "createOptions": "{\"HostConfig\":{\"Privileged\":true}}"
               }
           }
@@ -68,7 +68,7 @@
         "properties.desired": {
           "schemaVersion": "1.0",
           "routes": {
-            "ClassificationModuleToIoTHub": "FROM /messages/modules/ClassificationModule/outputs/classificationOutput INTO $upstream"
+            "route": "FROM /* INTO $upstream"
           },
           "storeAndForwardConfiguration": {
             "timeToLiveSecs": 7200

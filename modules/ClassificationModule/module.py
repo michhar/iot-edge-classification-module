@@ -7,6 +7,7 @@ import json
 import time
 from PIL import Image
 from torchvision import transforms
+import torch
 from sender import Sender
 from classify import Classifier
 

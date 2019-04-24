@@ -1,5 +1,8 @@
+import torch
+import torchvision.models as models
 import sys
 import os
+import json
 
 
 sys.path.append(os.getcwd())
@@ -18,7 +21,8 @@ class Classifier(object):
 
     def classify(self, image):
         """Perform the classification with the torchvision
-        model"""
+        model - image must be in the right shape and transformed
+        appropriately"""
         result = {}
         with torch.no_grad():
             output = self.model(image)

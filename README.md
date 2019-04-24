@@ -13,8 +13,14 @@ This uses a PyTorch Squeezenet model for image classification encapsulated in an
 
 ## Instructions
 
-Coming soon
+Follow the Quickstart at <a href="https://github.com/Azure/iotedgedev" target="_blank">https://github.com/Azure/iotedgedev</a>.  See the Wiki for more information and instructions.
 
 ## Contribute
 
 Issues and Pull Requests are welcome.
+
+## Troubleshooting
+
+If you need a `.env` file in the running docker container created above, it will help to have an editor like `vim`.  Install with:
+
+    sudo apt-get update && sudo apt-get install vim

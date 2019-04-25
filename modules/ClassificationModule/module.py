@@ -62,7 +62,7 @@ while True:
         type = 'captured'
     else:
         type = 'static'
-        array = cv2.imread(os.join.path('data', 'bear', '1.jpg'))
+        array = cv2.imread(os.join.path('sample_data', 'bear.jpg'))
     image = transform_image(array)
 
     time_before = time.time()

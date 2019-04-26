@@ -9,7 +9,7 @@ from PIL import Image
 from torchvision import transforms
 import torch
 from sender import Sender
-from classify import Classifier
+from classifier import Classifier
 
 
 # If there's CUDA, use it!

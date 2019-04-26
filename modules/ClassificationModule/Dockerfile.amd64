@@ -14,7 +14,10 @@ RUN pip3 install --upgrade pip
 COPY requirements.txt ./
 RUN pip3 install -r requirements.txt
 
-COPY *.py /
+COPY . .
+
+RUN useradd -ms /bin/bash moduleuser
+USER moduleuser
 
 CMD ["python3", "-u", "module.py"]
 

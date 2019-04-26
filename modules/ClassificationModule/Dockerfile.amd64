@@ -1,4 +1,4 @@
-FROM sqeezenet-from-torchvision:latest
+FROM rheartpython/sqeezenet-from-torchvision:latest
 
 WORKDIR /
 

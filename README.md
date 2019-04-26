@@ -24,3 +24,7 @@ Issues and Pull Requests are welcome.
 If you need a `.env` file in the running docker container created above, it will help to have an editor like `vim`.  Install with:
 
     sudo apt-get update && sudo apt-get install vim
+
+## Additional Notes
+
+* Using https://download.pytorch.org/models/squeezenet1_1-f364aa15.pth (click will download) Squeezenet model

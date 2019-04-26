@@ -2,7 +2,7 @@
   "$schema-version": "0.0.1",
   "description": "",
   "image": {
-    "repository": "rheartpython/iot-edge-torchvision-module",
+    "repository": "michharregistry.azurecr.io/iot-edge-torchvision-module",
     "tag": {
       "version": "0.0.1",
       "platforms": {

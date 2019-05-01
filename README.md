@@ -15,6 +15,18 @@ This uses a PyTorch Squeezenet model for image classification encapsulated in an
 
 Follow the Quickstart at <a href="https://github.com/Azure/iotedgedev" target="_blank">https://github.com/Azure/iotedgedev</a>.  See the Wiki for more information and instructions.
 
+Building the module with the simulator tool, `iotedgedev`, will produce output like:
+
+<img src="imgs/simulator_build_module.png" width="75%">
+
+The next step (combined command to setup and start simulator) will produce output like:
+
+<img src="imgs/simulator_start.png" width="75%">
+
+The final step, monitoring the simulated module, will produce output like:
+
+<img src="imgs/simulator_monitor.png" width="75%">
+
 ## Contribute
 
 Issues and Pull Requests are welcome.

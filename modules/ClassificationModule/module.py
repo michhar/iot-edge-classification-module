@@ -25,7 +25,7 @@ CLASSIFICATION_COUNT = int(os.getenv('CLASSIFICATION_COUNT', 0))
 
 # This environment variable is set when the module is started by the
 # IoT Edge runtime
-IS_EDGE = os.getenv('IOTEDGE_MODULEID', False)
+IS_EDGE = os.getenv('IOTEDGE_MODULEID', True)
 
 if IS_EDGE:
     sender = Sender()

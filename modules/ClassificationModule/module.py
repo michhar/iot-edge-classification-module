@@ -10,6 +10,7 @@ from torchvision import transforms
 import torch
 from sender import Sender
 from classifier import Classifier
+import numpy as np
 
 
 # If there's CUDA, use it!
@@ -48,7 +49,9 @@ def transform_image(array):
     # Converts to a PIL Image
     image = Image.fromarray(np.uint8(array))
     # Creates a torch tensor
-    image = loader(pil_image).float()
+    image = loader(image).float()
+    # Add a dimension to beginning of tensor ("batch")
+    image = image.unsqueeze(0)
     return image.to(device)
 
 # Keep count of classifcations performed
@@ -62,7 +65,7 @@ while True:
         type = 'captured'
     else:
         type = 'static'
-        array = cv2.imread(os.join.path('sample_data', 'bear.jpg'))
+        array = cv2.imread(os.path.join('sample_data', 'bear.jpg'))
     image = transform_image(array)
 
     time_before = time.time()

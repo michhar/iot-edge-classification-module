@@ -21,9 +21,18 @@ Issues and Pull Requests are welcome.
 
 ## Troubleshooting
 
-If you need a `.env` file in the running docker container created above, it will help to have an editor like `vim`.  Install with:
+If you need a `.env` file in the running docker container created above, it will help to have an editor like `vim`.  Install into the container with:
 
     sudo apt-get update && sudo apt-get install vim
+    sudo vim .env
+
+Then to add the system variables listed in the `.env` just "source" it in Unix environments:
+
+    source .env
+
+To check the logs of a particular container (e.g. the IoT Edge Module) run:
+
+    sudo docker logs <CONTAINER ID>
 
 ## Additional Notes
 

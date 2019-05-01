@@ -27,5 +27,5 @@ class Classifier(object):
         with torch.no_grad():
             output = self.model(image)
             _, pred = torch.max(output, 1)
-            result = {'prediction': self.classes[str(pred.item())])}
+            result = {'prediction': self.classes[str(pred.item())]}
         return result
